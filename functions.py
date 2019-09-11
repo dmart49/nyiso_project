@@ -65,7 +65,7 @@ def split_data(data, split_date):
     return data[data.index < split_date].copy(), \
                data[data.index >=  split_date].copy()
 
-def data_prep(data, isTest=0):
+def data_prep(data, target, _id, isTest=0):
     """
     Separates columns used in model from target and identifier columns
     returns a list of columns to be used in model and columns that may have use
@@ -107,13 +107,12 @@ def forecast_error(y_true, y_pred):
 def mean_forecast_error(forecast_error):
     return forecast_error.mean()
 
-def _split(X, n_splits):
+def create_split(X, n_splits):
     """
     creates splits for time series data for cross validation
     """
     split_points = []
     n = len(X)
-    count=0
     for split in range(n_splits):
         split_points.append((0, n * (split + 1) // n_splits))
 #         split_points.append((n * split // n_splits, n * (split + 1) // n_splits))
