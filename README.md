@@ -13,4 +13,7 @@ Notebook overview: <br>
 <a href="https://github.com/dmart49/nyiso_project/blob/master/combinedata.ipynb">combinedata</a> - Combines all the individual .csv files, downsamples and creates a single csv file with all data <br>
 <a href="https://github.com/dmart49/nyiso_project/blob/master/prophet.ipynb">prophet</a> - time series model with Prophet <br>
 <a href="https://github.com/dmart49/nyiso_project/blob/master/xgboost_final.ipynb">xgboost_final</a> - a time series model with xgboost and a clean notebook with the final model used with a plotly rangeslider visualization <br>
+
+Other: <br>
 <a href="https://github.com/dmart49/nyiso_project/blob/master/functions.py">functions</a> - all the relevant functions used in all notebooks <br>
+<a href="https://github.com/dmart49/nyiso_project/blob/master/NYISOpresentation.pdf">NYISO Presentation</a> - pdf version of the presentation that accompanies this repo. <a href="https://docs.google.com/presentation/d/1HZnXqkxkC9wPsV0PM9sh9fLLfKa4_Jf9_bLQLR_s6wE/edit?usp=sharing">Here</a> is the link for the Google Slides version. <br>
